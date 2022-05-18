@@ -1,5 +1,7 @@
 function startGame() {
-  let playerName: string = 'Audrey';
+  let playerName: string;
+  playerName = null;
+  playerName = undefined;
   logPlayer(playerName);
 
   var messagesElement = document.getElementById('messages');
