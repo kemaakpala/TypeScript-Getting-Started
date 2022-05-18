@@ -1,10 +1,14 @@
 function startGame() {
-  let playerName: string | null | undefined;
-  playerName = null;
-  playerName = undefined;
+  let playerName: string = 'Audrey';
   logPlayer(playerName);
 
-  var messagesElement = document.getElementById('messages');
+  var messagesElement: HTMLElement | string;
+  if (typeof messagesElement === 'string') {
+    return messagesElement;
+  } else {
+    return messagesElement;
+  }
+  messagesElement = document.getElementById('messages');
   messagesElement!.innerText = 'Welcome to MultiMath! Staring new game...';
 }
 
